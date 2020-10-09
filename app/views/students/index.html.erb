@@ -1,7 +1,7 @@
 <h2> Search by Student Name: </h2>
 <%= form_tag students_path, method: :get do %>
   <p>
-    <%= text_field_tag :search, params[:search] %>
+    <%= text_field_tag :query, params[:query] %>
     <%= submit_tag "Search", name: nil %>
   </p>
 <% end %>
